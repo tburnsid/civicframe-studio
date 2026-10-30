@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact CivicFrame Studio for social media content and visuals for local political campaigns." />
+    <title>Contact | CivicFrame Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="CivicFrame Studio home">
+          <span class="brand-mark">C</span>
+          <div>
+            <strong>CivicFrame</strong>
+            <span>Studio</span>
+          </div>
+        </a>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="democratic.html">Democratic</a>
+          <a href="republican.html">Republican</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a class="button button-secondary small" href="contact.html">Get a quote</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section contact-page">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h1>Tell us about your campaign and what kind of content you need.</h1>
+            <p class="lede">
+              Whether you need a regular social media package or a quick-turn election sprint, we can help create content from the footage and materials you already have.
+            </p>
+          </div>
+
+          <form class="contact-form dark-form" action="https://formsubmit.co/hello@civicframestudio.com" method="POST">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="New CivicFrame Studio Inquiry" />
+            <input type="hidden" name="_next" value="https://tburnsid.github.io/civicframe-studio/thank-you.html" />
+
+            <label>
+              Name
+              <input type="text" name="Name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="Email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Campaign office
+              <input type="text" name="Campaign" placeholder="Mayor, city council, school board..." required />
+            </label>
+            <label>
+              Party lane
+              <select name="Party lane" required>
+                <option value="">Select one</option>
+                <option value="Democratic">Democratic</option>
+                <option value="Republican">Republican</option>
+                <option value="Not sure yet">Not sure yet</option>
+              </select>
+            </label>
+            <label>
+              Project details
+              <textarea name="Project" rows="5" placeholder="Tell us about your content needs, timeline, and platform priorities." required></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send inquiry</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <strong>CivicFrame Studio</strong>
+          <p>Campaign creative for local candidates nationwide.</p>
+        </div>
+        <a href="mailto:hello@civicframestudio.com">hello@civicframestudio.com</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('.contact-form');
+  const urlParams = new URLSearchParams(window.location.search);
+  const lane = urlParams.get('lane');
 
-  if (form) {
-    form.addEventListener('submit', (event) => {
-      const name = form.querySelector('input[name="Name"]')?.value?.trim();
-      const email = form.querySelector('input[name="Email"]')?.value?.trim();
-      const campaign = form.querySelector('input[name="Campaign"]')?.value?.trim();
+  if (lane === 'democratic') {
+    const select = document.querySelector('select[name="Party lane"]');
+    if (select) {
+      select.value = 'Democratic';
+    }
+  }
 
-      if (!name || !email || !campaign) {
-        event.preventDefault();
-        alert('Please fill in your name, email, and campaign office before submitting.');
-      }
-    });
+  if (lane === 'republican') {
+    const select = document.querySelector('select[name="Party lane"]');
+    if (select) {
+      select.value = 'Republican';
+    }
   }
 });
